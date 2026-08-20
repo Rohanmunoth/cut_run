@@ -1,0 +1,19 @@
+# This repo is the pipeline (code + env specs), not the data. Every run
+# creates these directories under wherever PROJECT_DIR points; keep them out
+# of git regardless of where that happens to be relative to the repo.
+fastq/
+trimmed/
+bams/
+filtered/
+qc/
+peaks/
+logs/
+*.fastq.gz
+*.bam
+*.bai
+*.bw
+*.npz
+
+.DS_Store
+__pycache__/
+*.pyc
